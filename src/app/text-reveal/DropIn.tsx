@@ -32,10 +32,10 @@ const DropIn = () => {
     }, [])
 
     return (
-        <section className='h-screen grid place-items-center px-4 lg:px-20'>
-            <div className='flex flex-col gap-8 px-4'>
+        <section className='h-screen grid place-items-center px-4'>
+            <div className='flex flex-col gap-8 w-fit px-4'>
                 <h1 className='text-5xl font-extrabold underline'>Drop In</h1>
-                <p className='font-bold text-3xl' id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sit!</p>
+                <p className='font-bold text-justify text-xl md:text-3xl lg:w-[50vw]' id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sit!</p>
             </div>
         </section>
     )
