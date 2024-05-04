@@ -23,7 +23,7 @@ const FadeIn = () => {
                     end: 'top 40%',
                     scrub: 1,
                     toggleActions: 'play none one reverse',
-                    markers: true,
+                    // markers: true,
                 },
                 opacity: 0.3,
                 stagger: 0.1
@@ -32,10 +32,13 @@ const FadeIn = () => {
     }, [])
 
     return (
-        <section className='h-screen grid place-items-center px-4 lg:px-20'>
-            <p className='font-bold text-justify px-8 text-xl md:text-3xl lg:w-1/2' id="fadeIn">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ad tempore blanditiis quos reiciendis modi quae iste aliquid doloribus delectus!
-            </p>
+        <section className='h-screen grid place-items-center px-4'>
+            <div className='flex flex-col gap-8 w-fit px-4'>
+                <h1 className='text-5xl font-extrabold underline'>Fade In</h1>
+                <p className='font-bold text-justify text-xl md:text-3xl lg:w-[50vw]' id="fadeIn">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ad tempore blanditiis quos reiciendis modi quae iste aliquid doloribus delectus!
+                </p>
+            </div>
         </section>
     )
 }
