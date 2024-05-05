@@ -1,6 +1,7 @@
 import BlankSection from '@/components/BlankSection'
-import DropIn from './DropIn'
+import PopIn from './PopIn'
 import FadeIn from './FadeIn'
+import DropIn from './DropIn'
 
 
 const Page = () => {
@@ -9,8 +10,9 @@ const Page = () => {
         <main>
             <BlankSection />
 
-            <DropIn />
+            <PopIn />
             <FadeIn />
+            <DropIn />
 
             <BlankSection />
         </main>

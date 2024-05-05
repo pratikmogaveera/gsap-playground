@@ -14,7 +14,7 @@ const FadeIn = () => {
         const split = document.querySelectorAll('#fadeIn')
 
         split.forEach((char, i) => {
-            const text = new SplitType(char as TargetElement, { types: 'chars' },)
+            const text = new SplitType(char as TargetElement, { types: 'chars,words' },)
 
             gsap.from(text.chars, {
                 scrollTrigger: {
@@ -22,7 +22,6 @@ const FadeIn = () => {
                     start: 'top 60%',
                     end: 'top 40%',
                     scrub: 1,
-                    toggleActions: 'play none one reverse',
                     // markers: true,
                 },
                 opacity: 0.3,
@@ -35,8 +34,8 @@ const FadeIn = () => {
         <section className='h-screen grid place-items-center px-4'>
             <div className='flex flex-col gap-8 w-fit px-4'>
                 <h1 className='text-5xl font-extrabold underline'>Fade In</h1>
-                <p className='font-bold text-justify text-xl md:text-3xl lg:w-[50vw]' id="fadeIn">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ad tempore blanditiis quos reiciendis modi quae iste aliquid doloribus delectus!
+                <p className='font-bold text-justify md:text-3xl lg:w-[50vw]' id="fadeIn">
+                    This text starts with low opacity and gets its full opacity as you scroll down. Its a good technicque for display paras you want your users to read.
                 </p>
             </div>
         </section>
